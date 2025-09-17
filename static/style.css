@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input, button {
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+body{
+    background-image: url(../assets/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    border: 3px solid rgb(106, 106, 255);
+    border-radius: 10px;
+    padding: 4px;
+    background-color: rgba(234, 240, 242, 0.997);
+}
+
+input:focus {
+    background-color: aliceblue;
+}
+
+button {
+    padding: 4px;
+    border: 3px solid rgb(106, 106, 255);
+    border-radius: 10px;
+    background-color: rgb(180, 224, 255);
+}
+
+button:hover {
+    background-color: rgb(103, 186, 246);
+}
+
+#ContactForm {
+    padding: 5px;
+    margin: 10px;
+    border: 3px solid  rgb(106, 106, 255);
+    border-radius: 10px;
+    max-width: 250px;
+    background-color: azure;
+}
+
+.error{
+    border: 3px solid red;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(255, 107, 107); 
+}
+
+.media{
+    padding: 4px;
+    border: 3px solid blue;
+    background-color: rgb(171, 239, 239);
+    max-width: 420px;
+    max-height: 430px;
+}

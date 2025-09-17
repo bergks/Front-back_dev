@@ -5,12 +5,17 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
      <title>Контакты - Название вашего сайта</title>
+     <link rel="stylesheet" href="static/style.css">
      <meta name="contacts" content="Контакты, чтобы связаться с нами">
+     <meta property="og:type" content="website">
+     <meta property="og:title" content="Мой сайт">
+     <meta property="og:description" content="Очень интересный сайт сделанный для практической работы">
+     <meta property="og:image" content="https://static.tildacdn.com/tild3163-3066-4534-b633-323361313535/image.png">
 </head>
 
 <body>
     <header>
-        <a href="/">Логотип или название сайта</a>
+        <a href="index.html"><img src="assets/favicon.ico" alt=""></a>
         <!-- Главное меню навигации -->
         <nav>
             <ul>
@@ -37,11 +42,51 @@
         <section>
             <p>adres123@yandex.ru</p>
         </section>
+
+        <h1>Адрес</h1>
+        <section>
+            <p>г.Город, ул.Улица, д. 1</p>
+        </section>
+
+        <form id="ContactForm">
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="phone">Ваш телефон:</label>
+        <input type="text" id="phone" name="phone" placeholder="+7-999-99-99">
+        
+        <label for="email">Ваш email:</label>
+        <input type="text" id="email" name="email" required>
+
+        <label form="course">Ваш курс:</label> 
+        <select id="course" name="course" required>
+            <option value="">--</option>
+            <option value="1">1 курс</option>
+            <option value="2">2 курс</option>
+            <option value="3">3 курс</option>
+            <option value="4">4 курс</option>
+            <option value="other">Другой</option>
+        </select>
+
+        <label form="message">Ваше сообщение:</label> 
+        <textarea id="message" name="message" rows="4"></textarea>
+        
+        <button type="submit" id="submit-btn">Отправить</button>
+        <button type="reset" id="reset-btn">Очистить</button>
+
+    </form>
     </main>
 
     <footer>
         <p>&copy; 2023 Название вашего сайта. Все права защищены.</p>
         <p>Телефон: +7 (123) 456-78-90</p>
     </footer>
+
+    <script src="src/script.js">
+    document.write("У вас включен js");
+    </script>
+    <noscript><span>Отключен</span></noscript>
+
+
 </body>
 </html>
